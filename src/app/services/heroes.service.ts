@@ -10,7 +10,7 @@ export class HeroesService {
         'la cual puede convocar a grandes distancias.',
       img: 'assets/img/aquaman.png',
       aparicion: '1941-11-01',
-      casa: 'DC'
+      casa: 'assets/img/dc.png'
     },
     {
       nombre: 'Batman',
@@ -20,7 +20,7 @@ export class HeroesService {
         'las diferentes interpretaciones que le han dado al personaje.',
       img: 'assets/img/batman.png',
       aparicion: '1939-05-01',
-      casa: 'DC'
+      casa: 'assets/img/dc.png'
     },
     {
       nombre: 'Daredevil',
@@ -31,7 +31,7 @@ export class HeroesService {
         ' radar similar al de los murciélagos.',
       img: 'assets/img/daredevil.png',
       aparicion: '1964-01-01',
-      casa: 'Marvel'
+      casa: 'assets/img/marvel.png'
     },
     {
       nombre: 'Hulk',
@@ -41,7 +41,7 @@ export class HeroesService {
         'momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).',
       img: 'assets/img/hulk.png',
       aparicion: '1962-05-01',
-      casa: 'Marvel'
+      casa: 'assets/img/marvel.png'
     },
     {
       nombre: 'Linterna Verde',
@@ -52,7 +52,7 @@ export class HeroesService {
         ' realidad un meteorito verde de metal que cayó a la Tierra, el cual encontró un fabricante de lámparas llamado Chang)',
       img: 'assets/img/linterna-verde.png',
       aparicion: '1940-06-01',
-      casa: 'DC'
+      casa: 'assets/img/dc.png'
     },
     {
       nombre: 'Spider-Man',
@@ -63,7 +63,7 @@ export class HeroesService {
         ' suceda. En ocasiones este puede llevar a Spider-Man al origen del peligro.',
       img: 'assets/img/spiderman.png',
       aparicion: '1962-08-01',
-      casa: 'Marvel'
+      casa: 'assets/img/marvel.png'
     },
     {
       nombre: 'Wolverine',
@@ -74,14 +74,15 @@ export class HeroesService {
         ' la de cualquier humano.',
       img: 'assets/img/wolverine.png',
       aparicion: '1974-11-01',
-      casa: 'Marvel'
+      casa: 'assets/img/marvel.png'
     }
   ]
 
-  constructor() {
-  }
+  constructor() {}
 
   getHeroes = () => this.heroes
+
+  getHeroe = (id: number) => this.heroes[id]
 }
 
 export interface Heroe {
