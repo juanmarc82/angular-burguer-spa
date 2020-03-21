@@ -17,7 +17,8 @@
     "lib": ["es2017", "dom"],
     "paths": {
       "$components/*": ["src/app/components/*"],
-      "$img/*": ["src/app/assets/img/*"]
+      "$img/*": ["src/app/assets/img/*"],
+      "$services/*": ["src/app/services/*"]
     }
   }
 }

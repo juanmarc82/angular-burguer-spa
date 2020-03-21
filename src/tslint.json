@@ -1,5 +1,6 @@
 {
     "extends": "../tslint.json",
+    "quotemark": [true, "single"],
     "rules": {
         "directive-selector": [
             true,
@@ -12,6 +13,7 @@
             "element",
             "app",
             "kebab-case"
-        ]
+        ],
+        "semicolon": false
     }
 }
