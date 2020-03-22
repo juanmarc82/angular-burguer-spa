@@ -25,7 +25,7 @@ export class SearchComponent implements OnInit {
     this.heroes = this.heroeService.getHeroes()
   }
 
-  verHeroe = (id: number) => {
+  showHeroe = (id: number) => {
     const indexResult = this.heroes.findIndex(
       heroe => heroe.nombre === this.heroesFound[id].nombre
     )
