@@ -14,6 +14,7 @@
             "app",
             "kebab-case"
         ],
-        "semicolon": false
+        "semicolon": false,
+        "prefer-const": [false, {"destructuring": "all"}]
     }
 }
