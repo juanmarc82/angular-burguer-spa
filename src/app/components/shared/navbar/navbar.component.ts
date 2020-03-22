@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
+  templateUrl: './navbar.component.html'
 })
 export class NavbarComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
+  searchHeroe = (params: string) => this.router.navigate(['/search', params])
 }
