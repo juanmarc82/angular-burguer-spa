@@ -10,5 +10,5 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {}
 
-  searchHeroe = (params: string) => this.router.navigate(['/search', params])
+  searchHeroe = (params: string) => params && this.router.navigate(['/search', params])
 }
