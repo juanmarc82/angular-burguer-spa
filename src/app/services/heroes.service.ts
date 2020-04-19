@@ -84,8 +84,10 @@ export class HeroesService {
 
   getHeroe = (id: number) => this.heroes[id]
 
-  findHeroes = (termino: string) =>
-    this.heroes.filter(heroe => heroe.nombre.includes(termino.toLowerCase()))
+  findHeroes = (param: string) =>
+    this.heroes.filter(heroe =>
+      heroe.nombre.toLowerCase().includes(param.toLowerCase())
+    )
 }
 
 export interface Heroe {
